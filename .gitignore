@@ -192,3 +192,31 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Database locale
+*.db
+data/*.db
+
+# Cache
+__pycache__/
+*.pyc
+.cache/
+
+# Logs
+*.log
+
+# API Keys (backup sicurezza)
+*.env
+.env.*
+
+# Jupyter notebooks
+*.ipynb_checkpoints
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db

@@ -1,0 +1,51 @@
+[global]
+# Theme and appearance
+dataFrameSerialization = "legacy"
+
+[logger]
+level = "info"
+
+[client]
+# Prevents the app from being embedded in an iframe
+caching = true
+showErrorDetails = true
+
+[server]
+# Configuration for production deployment
+runOnSave = true
+allowRunOnSave = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 50
+maxMessageSize = 50
+enableWebsocketCompression = false
+
+[browser]
+# Automatically open browser when starting locally
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
+
+[theme]
+# Custom theme colors
+primaryColor = "#1f4e79"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
+
+[deprecation]
+showPyplotGlobalUse = false
+showfileUploaderEncoding = false
+
+[mapbox]
+# Add your Mapbox token here if needed for map visualizations
+# token = "your_mapbox_token_here"
+
+[s3]
+# AWS S3 configuration for file storage (optional)
+# bucket = "your-nba-assistant-bucket"
+# region = "us-east-1"
+# accessKeyId = "your_access_key"
+# secretAccessKey = "your_secret_key"
